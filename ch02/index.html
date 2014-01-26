@@ -3,7 +3,7 @@
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>There's nothing like Australia</title>
         <meta name="description" content="">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
@@ -36,35 +36,32 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
     </head>
     <body>
 
         <!-- Add your site or application content here -->
-        <style type="text/css">
 
-        div#wrapper{
-            height: 100%;
-            width: 100%;
-            text-align: center;
-        }
-        div#div_video{
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        </style>
         <div id='wrapper'>
-            <h3>
-            Web Engineering II: Developing Mobile HTML5 Apps
-            </h3>
-            <h4>
-                Homework #1: My First HTML5 App in the Cloud
-            </h4>
+            <h2>Web Engineering II</h2>
+            <h2>Developing Mobile HTML5 Apps</h2>
+            <h4>Homework #1: My First HTML5 App in the Cloud</h4>
+
             <div id='div_video'>
-<video width="480" controls>
-    <source src="videos/big_buck_bunny.mp4" type="video/mp4">
-    <source src="videos/big_buck_bunny.ogv" type="video/ogg">
-</video>
+
+            <video id="myVideo" controls preload="auto">
+                <source src="videos/video.mp4" type="video/mp4">
+                <source src="videos/video.webm" type="video/webm">
+                <track src="videos/video.vtt" kind="subtitles" srclang="en" label="English">
+                Your browser does not support the video tag.
+            </video>
+
+            <h4>
+
+                <p>Video: <a href="http://www.australia.com" target="_blank">Tourism Australia</a>
+
+            </h4>
             </div>
         </div>
         <script src="js/vendor/zepto.min.js"></script>
