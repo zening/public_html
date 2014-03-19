@@ -45,6 +45,7 @@ Ext.application({
         //Ext.Viewport.add(Ext.create('myApp.view.Main'));
          Ext.create("Ext.tab.Panel", {
             fullscreen: true,
+            ui: 'light',
             tabBarPosition: 'bottom',
             items: [
                 {
@@ -55,12 +56,10 @@ Ext.application({
                     xtype: 'chapters'
                 },
 
-                // this is the new item
                 {
                    xtype: 'instructors'
                 },
 
-                // this is the about tab
                 {
                     xtype: 'about'
                 }

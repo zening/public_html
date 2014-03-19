@@ -7,7 +7,7 @@ Ext.define('myApp.view.Chapters', {
                     title: 'Chapters',
                     iconCls: 'list',
                     displayField: 'title',
-
+                    ui: 'light',
                     store: {
                         type: 'tree',
 
