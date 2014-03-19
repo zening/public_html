@@ -45,7 +45,6 @@ Ext.application({
         //Ext.Viewport.add(Ext.create('myApp.view.Main'));
          Ext.create("Ext.tab.Panel", {
             fullscreen: true,
-            ui: 'light',
             tabBarPosition: 'bottom',
             items: [
                 {
