@@ -22,7 +22,7 @@ Ext.define('myApp.view.Chapters', {
 
                         proxy: {
                             type: 'ajax',
-                            url: '../resources/data/chapters.json',
+                            url: './resources/data/chapters.json',
                             reader: {
                                 type: 'json',
                                 rootProperty: 'courses.chapters'
