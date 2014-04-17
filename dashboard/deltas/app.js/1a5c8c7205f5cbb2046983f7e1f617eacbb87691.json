@@ -1,0 +1,1 @@
+["function _449d157658b0adcc256135ec127d0d2106ae835f",50,678071," Dashboard",678124,1231,"Ext.Msg.show({title:\"WE-II Final Project\",message:\"A REST client of ARSnova visualising the current statistics data of the backend\",scope:this,buttons:[{itemId:\"yes\",text:\"OK\"}],fn:function(b){if(b==\"yes\"){}}}",679382,3229]
