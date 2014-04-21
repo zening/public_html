@@ -49,11 +49,18 @@ function getData(){
 
               //async: false,
               success: function( response ){
-                $("#data1").fadeOut('fast');
-                $("#data2").fadeOut('fast');
-                $("#data3").fadeOut('fast');
-                $("#data4").fadeOut('fast');
-                $("#data5").fadeOut('fast');
+                // $("#data1").fadeOut('fast');
+                // $("#data2").fadeOut('fast');
+                // $("#data3").fadeOut('fast');
+                // $("#data4").fadeOut('fast');
+                // $("#data5").fadeOut('fast');
+
+                $("#data1").animate({height:'toggle'});
+                $("#data2").animate({height:'toggle'});
+                $("#data3").animate({height:'toggle'});
+                $("#data4").animate({height:'toggle'});
+                $("#data5").animate({height:'toggle'});
+
       
                 if ( data.length > 9) {
                         data.shift();
@@ -102,11 +109,17 @@ function getData(){
                 $("#data4").text(response.contents.questions);                
                 $("#data5").text(response.contents.answers);
                 
-                $("#data1").show('fast');
-                $("#data2").show('fast');
-                $("#data3").show('fast');
-                $("#data4").show('fast');
-                $("#data5").show('fast');
+                // $("#data1").show('slow');
+                // $("#data2").show('slow');
+                // $("#data3").show('slow');
+                // $("#data4").show('slow');
+                // $("#data5").show('slow');
+                $("#data1").animate({height:'toggle'});
+                $("#data2").animate({height:'toggle'});
+                $("#data3").animate({height:'toggle'});
+                $("#data4").animate({height:'toggle'});
+                $("#data5").animate({height:'toggle'});
+
                     //console.log(response.query.results.json);
 
               }
