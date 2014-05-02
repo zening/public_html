@@ -17,7 +17,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
   "Ext.draw.engine.SvgContext.Gradient": "touch/src/draw/engine/SvgContext.js",
-  "dashboard": "app"
+  "dashboard": "app",
+  "myApp": "app"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractComponent": [],
@@ -746,12 +747,15 @@ Ext.ClassManager.addNameAlternateMappings({
   "dashboard.controller.Main": [],
   "dashboard.model.ARSnovaVis": [],
   "dashboard.store.ARSnovaVis": [],
+  "dashboard.view.About": [],
   "dashboard.view.ActiveUsers": [],
   "dashboard.view.Answers": [],
   "dashboard.view.ClosedSessions": [],
-  "dashboard.view.Main": [],
+  "dashboard.view.Home": [],
   "dashboard.view.OpenSessions": [],
-  "dashboard.view.Questions": []
+  "dashboard.view.Questions": [],
+  "myApp.view.Chapters": [],
+  "myApp.view.Instructors": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1698,6 +1702,9 @@ Ext.ClassManager.addNameAliasMappings({
   "dashboard.controller.Main": [],
   "dashboard.model.ARSnovaVis": [],
   "dashboard.store.ARSnovaVis": [],
+  "dashboard.view.About": [
+    "widget.about"
+  ],
   "dashboard.view.ActiveUsers": [
     "widget.activeusers"
   ],
@@ -1707,13 +1714,19 @@ Ext.ClassManager.addNameAliasMappings({
   "dashboard.view.ClosedSessions": [
     "widget.closedsessions"
   ],
-  "dashboard.view.Main": [
-    "widget.main"
+  "dashboard.view.Home": [
+    "widget.home"
   ],
   "dashboard.view.OpenSessions": [
     "widget.opensessions"
   ],
   "dashboard.view.Questions": [
     "widget.questions"
+  ],
+  "myApp.view.Chapters": [
+    "widget.chapters"
+  ],
+  "myApp.view.Instructors": [
+    "widget.instructors"
   ]
 });

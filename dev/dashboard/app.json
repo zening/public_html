@@ -70,21 +70,33 @@
      *
      *      }
      */
-    // "css": [
-    //     {
-    //         "path": "resources/css/app.css",
-    //         "update": "delta"
-    //     }
-    // ],
-
     "css": [
+        // {
+        //     "path": "resources/css/app.css",
+        //     "update": "delta"
+        // },
         {
             "path": "resources/css/cupertino.css",
             "platform": ["chrome", "safari", "ios", "android", "firefox"],
             "bundle": true, 
             "update": "delta"
+        },
+
+        {
+            "path": "resources/css/custom.css",
+            "update": "delta"
         }
+
     ],
+    
+    // "css": [
+    //     {
+    //         "path": "resources/css/cupertino.css",
+    //         "platform": ["chrome", "safari", "ios", "android", "firefox"],
+    //         "bundle": true, 
+    //         "update": "delta"
+    //     }
+    // ],
     /**
      * Used to automatically generate cache.manifest (HTML 5 application cache manifest) file when you build
      */
@@ -113,7 +125,8 @@
     "resources": [
         "resources/images",
         "resources/icons",
-        "resources/startup"
+        "resources/startup",
+        "resources/data"
     ],
 
     /**
@@ -139,5 +152,5 @@
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "bd4b4d3d-3776-4ed1-949e-6dc24a873374"
+    "id": "f1eb34fc-cd7c-41ea-abc9-7c0687cde1b4"
 }

@@ -13,27 +13,31 @@
 Ext.application({
     name: 'dashboard',
 
-    requires: [
-        'Ext.MessageBox'
-    ],
+    // requires: [
+    //     'Ext.MessageBox'
+    // ],
+
+    controllers: ['Main'],
 
     views: [
+        'Home',
+        'About',
         'ActiveUsers',
         'OpenSessions',
         'ClosedSessions',
         'Questions',
-        'Answers',
-        'Main'
+        'Answers'
     ],
+
     models:[
         'ARSnovaVis'
     ],
     stores:[
         'ARSnovaVis'
     ],
-    controllers: [
-        'Main'
-    ],
+    // controllers: [
+    //     'Main'
+    // ],
     icon: {
         '57': 'resources/icons/Icon.png',
         '72': 'resources/icons/Icon~ipad.png',
@@ -57,7 +61,22 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('dashboard.view.Main'));
+        //Ext.Viewport.add(Ext.create('myApp.view.Main'));
+         Ext.create("Ext.tab.Panel", {
+            fullscreen: true,
+            //ui: 'light',
+            tabBarPosition: 'bottom',
+            items: [
+                {
+                    xtype: 'home'
+                },
+
+                {
+                    xtype: 'about'
+                }
+
+            ]
+        });
     },
 
     onUpdated: function() {

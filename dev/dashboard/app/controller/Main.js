@@ -1,8 +1,8 @@
-﻿Ext.define("dashboard.controller.Main", {
+Ext.define("dashboard.controller.Main", {
     extend: "Ext.app.Controller",
     config: {
         refs: {
-            mainView:"main"
+            mainView:"Home"
         },
         control: {
             mainView: {

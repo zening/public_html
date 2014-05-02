@@ -1,46 +1,39 @@
-﻿Ext.define("dashboard.view.Main", {
-    extend: "Ext.Container",
-    requires: [
-        "Ext.TitleBar"
-    ],
-    alias: "widget.main",
+Ext.define('dashboard.view.Home', {
+    extend: 'Ext.Panel',
+    requires: 'Ext.tab.Panel',
+    xtype: 'home',
+
     config: {
-        scrollable:true,
-        layout: {
-            type:"vbox"
+        title: 'Home',
+        iconCls: 'home',
+        cls:'home',
+
+        scrollable: {
+         direction: 'vertical',
+         directionLock: true
+            },
+
+        listeners: {
+            initialize: function () {
+
+            getData();
+
+            setInterval(function(){
+
+                getData();
+
+                },10000);
+
+            }
         },
-        items: [
-            {
-                xtype: "titlebar",
-                docked: "bottom",
-                title: "ARSnova Dashboard",
-                items: [
-                    {
-                        // iconCls: "refresh",
-                        // align: "right",
-                        // handler: function () {
-                        //     var parent = this.up("titlebar").getParent();
-                        //     parent.fireEvent("refreshRequestCmd", parent);
-                        // }
-                        iconCls: "info",
-                        align: "right",
-                        handler: function () {
-                            var parent = this.up("titlebar").getParent();
-                            parent.fireEvent("refreshRequestCmd", parent);
-                        }
-                    }
-                ]
-            },            
-            {
-                xtype: "container",
-                //flex: 1,
-                layout: "vbox",
-                items: [
-                    {
-                        // xtype: "container",
-                        // flex: 0,
-                        // height: 100,
-                        // layout:"vbox",
+        
+        items:[
+        {
+            xtype: "container",
+            layout: "vbox",
+            items:[
+                   {
+
                         items:[
                             {
                                 xtype: "container",
@@ -54,9 +47,7 @@
                         ]
                     },
                     {
-                        // xtype: "container",
-                        // flex: 1,
-                        // layout:"vbox",
+
                         items:[
                             {
                                 xtype: "container",
@@ -70,9 +61,6 @@
                         ]
                     },
                     {
-                        // xtype: "container",
-                        // flex: 1,
-                        // layout: "vbox",
                         items: [
                             {
                                 xtype: "container",
@@ -86,9 +74,7 @@
                         ]
                     },
                     {
-                        // xtype: "container",
-                        // flex: 1,
-                        // layout: "vbox",
+
                         items: [
                             {
                                 xtype: "container",
@@ -102,9 +88,7 @@
                         ]
                     },
                     {
-                        // xtype: "container",
-                        // flex: 1,
-                        // layout: "vbox",
+
                         items: [
                             {
                                 xtype: "container",
@@ -117,21 +101,11 @@
                            }
                         ]
                     }
-                ]
-            }            
-        ],
-                listeners: {
-            initialize: function () {
+            ]
 
-            getData();
-
-            setInterval(function(){
-
-                    getData();
-
-                },10000);
-
-            }
         }
+        ]
     }
+
+
 });
