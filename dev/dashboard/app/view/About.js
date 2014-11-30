@@ -19,7 +19,7 @@ Ext.define('dashboard.view.About', {
 
             '<br>Resource URL: <a href="https://arsnova.eu/statistics/">https://arsnova.eu/statistics/</a>',
 
-            '<br><br><p>Leo Liu<br><a href="mailto:zeningliu@gmail.com">zeningliu@gmail.com</a><br>Sydeny, Australia </p>',
+            '<br><br><p>Leo Liu<br><a href="mailto:zeningliu@gmail.com">zeningliu@gmail.com</a><br>Sydney, Australia </p>',
         	
 
         	'</div></div>'
